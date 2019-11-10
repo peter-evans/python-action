@@ -1,6 +1,6 @@
 name: 'Python Action'
 author: Peter Evans
-description: 'A template for a multi-platform Python GitHub action'
+description: 'A template to bootstrap the creation of a multi-platform Python GitHub action'
 inputs:
   message:
     description: 'A message to the world'
