@@ -28,7 +28,7 @@ async function run() {
 
     // Execute python script
     await exec.exec("python", [
-      `${src}/create-pull-request.py`,
+      `${src}/python-action.py`,
       inputs.message,
       inputs.sender
     ]);
