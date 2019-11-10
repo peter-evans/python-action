@@ -17,6 +17,7 @@ The reason for this is that only [Javascript and Docker container actions are cu
 ## Usage
 
 ### Develop action
+
 - Modify [`action.yml`](action.yml) to describe the action
 - Modify [`index.js`](index.js) to pass action inputs to the Python script
 - Set the version of Python required in [`index.js`](index.js)
