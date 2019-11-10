@@ -1,5 +1,5 @@
 # Python Action
-[![Actions Status](https://github.com/peter-evans/python-action/workflows/python-action/badge.svg)](https://github.com/peter-evans/python-action/actions)
+[![Actions Status](https://github.com/peter-evans/python-action/workflows/Python%20Action/badge.svg)](https://github.com/peter-evans/python-action/actions)
 
 A template to bootstrap the creation of a multi-platform Python GitHub action.
 
