@@ -1,0 +1,28 @@
+{
+  "name": "python-action",
+  "version": "1.0.0",
+  "description": "A template for a multi-platform Python GitHub action",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-evans/python-action.git"
+  },
+  "keywords": [],
+  "author": "Peter Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peter-evans/python-action/issues"
+  },
+  "homepage": "https://github.com/peter-evans/python-action",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@actions/exec": "^1.0.1",
+    "@actions/tool-cache": "^1.1.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.20.5"
+  }
+}

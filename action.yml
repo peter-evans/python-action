@@ -1,0 +1,21 @@
+name: 'Python Action'
+author: Peter Evans
+description: 'A template for a multi-platform Python GitHub action'
+inputs:
+  message:
+    description: 'A message to the world'
+    required: true
+    default: 'Hello World!'
+  sender:
+    description: 'The sender of the message'
+    required: true
+    default: 'Peter'
+outputs:
+  reply:
+    description: 'A reply from the world'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'activity'  
+  color: 'yellow'
