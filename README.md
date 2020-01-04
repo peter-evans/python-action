@@ -14,6 +14,11 @@ The reason for this is that only [Javascript and Docker container actions are cu
 - Container actions using `image: 'Dockerfile'` are slow because they need to build the image from scratch every time the workflow runs.
 - Container actions using `image: 'docker://my-namespace/my-image:1.0.0'` cannot be forked easily because the reference to the public Docker image remains. Being able to fork GitHub actions is important for security conscious users.
 
+## Actions using this template
+
+- [Create Pull Request](https://github.com/peter-evans/create-pull-request)
+- [Create Issue From File](https://github.com/peter-evans/create-issue-from-file)
+
 ## Usage
 
 ### Develop action
@@ -36,7 +41,7 @@ npm install
 ### Package for distribution
 
 ```
-npm run build
+npm run package
 ```
 
 **Note**: Packaging the action is necessary even when making changes to the Python source code in `src`. Changes made will be packaged into `dist`.
