@@ -28,8 +28,10 @@ The reason for this is that only [Javascript and Docker container actions are cu
 - Set the version of Python required in [`index.js`](index.js)
     ```javascript
         // Setup Python from the tool cache
-        setupPython("3.8.0", "x64");
+        setupPython("3.8.x", "x64");
     ```
+    **Note**: The GitHub Actions tool cache only seems to keep the latest builds of `major.minor.build` tool versions. So it's best to follow the minor version rather than an explicit build. For example, use `3.8.x` instead of `3.8.1`.
+
 - Add Python dependencies to [`requirements.txt`](src/requirements.txt)
 
 ### Install dependencies
