@@ -12,11 +12,13 @@ async function run() {
     // Setup Python from the tool cache
     setupPython("3.8.x", "x64");
 
-    // Install requirements
+    // Install vendored dependencies
     await exec.exec("pip", [
       "install",
       "--requirement",
-      `${src}/requirements.txt`
+      `${src}/requirements.txt`,
+      "--no-index",
+      `--find-links=${__dirname}/vendor`
     ]);
 
     // Fetch action inputs
@@ -28,7 +30,7 @@ async function run() {
 
     // Execute python script
     await exec.exec("python", [
-      `${src}/python-action.py`,
+      `${src}/python_action.py`,
       inputs.message,
       inputs.sender
     ]);

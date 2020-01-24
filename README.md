@@ -34,13 +34,16 @@ The reason for this is that only [Javascript and Docker container actions are cu
 
 - Add Python dependencies to [`requirements.txt`](src/requirements.txt)
 
-### Install dependencies
+### Install javascript dependencies
 
 ```
 npm install
 ```
 
 ### Package for distribution
+
+This will use [ncc](https://github.com/zeit/ncc) to compile the Node.js code and dependencies into a single file.
+Python dependencies are vendored to the `dist/vendor` directory.
 
 ```
 npm run package
