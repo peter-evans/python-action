@@ -16,7 +16,6 @@ The reason for this is that only [Javascript and Docker container actions are cu
 
 ## Actions using this template
 
-- [Create Pull Request](https://github.com/peter-evans/create-pull-request)
 - [Create Issue From File](https://github.com/peter-evans/create-issue-from-file)
 
 ## Usage
